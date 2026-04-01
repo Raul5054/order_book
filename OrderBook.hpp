@@ -1,5 +1,24 @@
-#include "Order.cpp"
+#ifndef ORDERBOOK_HPP
+#define ORDERBOOK_HPP
+
+#include "Order.hpp"
 #include "Transaction.hpp"
+
+struct OrderNode
+{
+    Order order;
+    OrderNode *next;
+
+    OrderNode(Order order) : order(order), next(nullptr) {}
+};
+
+struct TransactionNode
+{
+    Transaction tran;
+    TransactionNode *next;
+
+    TransactionNode(Transaction tran) : tran(tran), next(nullptr) {}
+};
 
 class OrderBook
 {
@@ -7,6 +26,9 @@ class OrderBook
 private:
     // Estruturas internas escolhidas pelos alunos
     // para armazenar ordens de compra, venda e transações
+    OrderNode *BuyOrder;
+    OrderNode *SellOrder;
+    TransactionNode *TranOrder;
 
 public:
     OrderBook();
@@ -25,3 +47,5 @@ public:
 
     // Outros métodos auxiliares, se necessário
 };
+
+#endif
