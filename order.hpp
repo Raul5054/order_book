@@ -1,4 +1,5 @@
-class Order {
+class Order
+{
 
 private:
     int id;
@@ -7,7 +8,6 @@ private:
     int timestamp;
 
 public:
-
     Order(int id, char type, float price, int timestamp);
     ~Order();
 
