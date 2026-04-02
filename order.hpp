@@ -12,6 +12,7 @@ private:
 
 public:
     Order(int id, char type, float price, int timestamp);
+    Order();
     ~Order();
 
     int getId();
