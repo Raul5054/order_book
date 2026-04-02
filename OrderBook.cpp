@@ -354,6 +354,7 @@ Transaction *OrderBook::getTransactions(int *n)
 
 void OrderBook::printBuyOrders()
 {
+    cout << endl;
     cout << "Buy Orders:" << endl; // Cabeçalho
 
     // Se a lista é vazia
@@ -381,6 +382,7 @@ void OrderBook::printBuyOrders()
 
 void OrderBook::printSellOrders()
 {
+    cout << endl;
     cout << "Sell Orders:" << endl; // Cabeçalho
 
     // Se a lista é vazia
@@ -408,6 +410,7 @@ void OrderBook::printSellOrders()
 
 void OrderBook::printTransactions()
 {
+    cout << endl;
     cout << "Transactions:" << endl; // Cabeçalho
 
     // Se a lista é vazia
